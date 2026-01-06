@@ -1,5 +1,3 @@
-Bilkul 👍
-Yeh **GitHub Day 1 – Node.js README.md** ka ready-to-use content hai. Tum ise direct copy karke apne repository me paste kar sakte ho.
 
 ---
 
