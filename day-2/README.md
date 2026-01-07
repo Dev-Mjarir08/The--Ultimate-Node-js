@@ -47,77 +47,7 @@ Example:
 npm init -y
 ```
 
----
 
-## 📁 What are Modules in Node.js?
-
-Module ka matlab hota hai **code ko small reusable parts me divide karna**.
-
-Node.js me 3 types ke modules hote hain:
-
-1. **Core Modules**
-2. **Local (Custom) Modules**
-3. **Third-party Modules**
-
----
-
-## 🔹 Core Modules
-
-Node.js ke built-in modules hote hain, jaise:
-
-* `fs` (File System)
-* `http`
-* `path`
-* `os`
-
-Example:
-
-```js
-const fs = require("fs");
-
-fs.writeFileSync("test.txt", "Hello Node.js");
-```
-
----
-
-## 🔹 Local (Custom) Modules
-
-Hum apna khud ka module bana sakte hain.
-
-**math.js**
-
-```js
-function add(a, b) {
-  return a + b;
-}
-
-module.exports = add;
-```
-
-**index.js**
-
-```js
-const add = require("./math");
-console.log(add(5, 3));
-```
-
----
-
-## 🔹 Third-party Modules
-
-npm se install hone wale modules.
-
-Example:
-
-```bash
-npm install express
-```
-
-```js
-const express = require("express");
-```
-
----
 
 ## 📂 Important Files & Folders
 
