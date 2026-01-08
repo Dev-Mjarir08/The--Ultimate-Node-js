@@ -88,5 +88,4 @@ setInterval(() => {
 
 Used to stop timers.
 
----
 
