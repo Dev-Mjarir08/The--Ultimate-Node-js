@@ -1,7 +1,7 @@
 
 ---
 
-# 🚀 Day 2: Node.js Installation & Modules
+# 🚀 Day 2: Node.js Installation 
 
 ## 📌 Day 2 Overview
 
