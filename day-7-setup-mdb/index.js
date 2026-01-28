@@ -51,7 +51,29 @@ app.get('/delete/:id', (req, res) => {
     })
 })
 
+app.get('/edit/:id', (req, res) => {
+  const id = req.params.id;
+  UserModel.findById(id)
+    .then((user) => {
+      res.render('pages/editData', { user });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.redirect('/viewData')
+    })
+})
+app.post('/edit/:id', (req, res) => {
+  const id = req.params.id;
 
+  UserModel.findByIdAndUpdate(id, req.body)
+    .then(() => {
+      res.redirect('/viewData');
+    })
+    .catch((err) => {
+      console.log(err);
+      res.redirect('/viewData');
+    });
+});
 
 app.listen(port, () => {
   console.log('Server Started');
